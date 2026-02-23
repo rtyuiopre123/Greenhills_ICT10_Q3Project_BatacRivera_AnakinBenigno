@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f3d2e, #08291f);
+    font-family: 'Inter', sans-serif;
+    color: #f5e6b8;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #061f18;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    color: #d4af37;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #f5e6b8;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* CARD */
+.card {
+    background: #0c2f23;
+    padding: 30px;
+    width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.option {
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #123f31;
+    color: #f5e6b8;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d4af37, #b8962e);
+    color: #0c2f23;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #061f18;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.85rem;
+    color: #d4af37;
+}

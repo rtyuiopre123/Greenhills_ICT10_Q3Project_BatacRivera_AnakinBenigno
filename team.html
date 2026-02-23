@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intramurals | Team Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h2>Intramurals SY 2026-2027</h2>
+        <nav>
+            <a href="index.html">Sign Up</a>
+            <a href="team.html">Team Checker</a>
+            <a href="players.html">Players</a>
+        </nav>
+    </div>
+</header>
+
+<div class="card">
+    <h1>Intramurals Team Checker</h1>
+
+    <label>Online Registration</label>
+    <div class="option">
+        <input type="radio" name="reg" value="yes"> Yes
+        <input type="radio" name="reg" value="no"> No
+    </div>
+
+    <label>Medical Clearance</label>
+    <div class="option">
+        <input type="radio" name="med" value="cleared"> Cleared
+        <input type="radio" name="med" value="not cleared"> Not Cleared
+    </div>
+
+    <label>Grade Level (7–10)</label>
+    <input type="number" id="grade">
+
+    <label>Section</label>
+    <select id="section">
+        <option value="">Select section</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Sapphire">Sapphire</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Topaz">Topaz</option>
+    </select>
+
+    <button py-click="intrams_qualifications">Check Eligibility</button>
+
+    <div id="output"></div>
+</div>
+
+<footer>
+    Rivera Benigno Ignacio | Anakin Batac | Class of 10 Sapphire
+</footer>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
